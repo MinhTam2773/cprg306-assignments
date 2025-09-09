@@ -1,9 +1,7 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
-    <>
-      <Link href='/week-2'>Week 2</Link>
-    </>
+    <main className="font-sans p-3">
+      <h1 className="font-bold text-4xl text-gray-400">Welcome to my app</h1>
+    </main>
   );
 }
