@@ -19,7 +19,7 @@ const Sidebar = () => {
                 {tabs?.length && tabs.map((tab) =>
                     <li key={tab}>
                         <Link href={`/${tab.replace(' ','-')}`}>
-                            <div className={`${tab.replace(' ','-') === currentLocation ? 'text-green-600 underline bg-green-900' : 'hover:text-green-600 hover: hover:bg-green-900'} px-3 py-2 mx-2 rounded-xl`}>
+                            <div className={`${tab.replace(' ','-') === currentLocation ? 'text-green-600 underline bg-green-900' : 'hover:text-green-600 hover: hover:bg-green-800'} px-3 py-2 mx-2 rounded-xl`}>
                                 {tab}
                             </div>
                         </Link>

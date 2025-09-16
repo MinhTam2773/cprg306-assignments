@@ -1,8 +1,12 @@
 import React from 'react'
+import ItemList from './_components/itemList'
 
 const page = () => {
   return (
-    <div>Week 3 Page</div>
+    <main className='p-3'>
+      <h1 className='font-mono text-3xl font-semibold'>Shopping List</h1>
+      <ItemList/>
+    </main>
   )
 }
 
