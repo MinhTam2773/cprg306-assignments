@@ -7,8 +7,12 @@ import DecrementButton from './_component/decrementButton';
 const Page = () => {
   let [count, setCount] = useState(0);
 
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+  const increment = () => {
+    if (count < 20) setCount(count + 1);
+  }
+  const decrement = () => {
+    if (count > 0) setCount(count -1);
+  }
   return (
     <main className='p-3'>
       <div className='w-40 bg-white flex px-2 py-1 rounded-lg justify-between'>
