@@ -5,21 +5,21 @@ import IncrementButton from './_component/incrementButton';
 import DecrementButton from './_component/decrementButton';
 
 const Page = () => {
-  let [count, setCount] = useState(0);
+  const [quantity, setQuantity] = useState(0);
 
   const increment = () => {
-    if (count < 20) setCount(count + 1);
+    if (quantity < 20) setQuantity(quantity + 1);
   }
   const decrement = () => {
-    if (count > 0) setCount(count -1);
+    if (quantity > 0) setQuantity(quantity -1);
   }
   return (
     <main className='p-3'>
       <div className='w-40 bg-white flex px-2 py-1 rounded-lg justify-between'>
-        <p className='text-black'>Count: {count}</p>
+        <p className='text-black'>Quantity: {quantity}</p>
         <div className='flex gap-1'>
-          <IncrementButton increment={increment} />
-          <DecrementButton decrement={decrement} />
+          <IncrementButton increment={increment} quantity={quantity} />
+          <DecrementButton decrement={decrement} quantity={quantity}/>
         </div>
       </div>
     </main>
