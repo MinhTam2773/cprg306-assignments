@@ -8,6 +8,7 @@ const DecrementButton = ({ decrement, quantity }) => {
             items-center rounded-sm transition-colors active:bg-blue-700 disabled:bg-gray-500 disabled:cursor-default'
       onClick={decrement}
       disabled={quantity == 0}
+      type='button'
     >
       -
     </button>

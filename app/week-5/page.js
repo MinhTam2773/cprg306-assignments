@@ -1,8 +1,9 @@
 import React from 'react'
+import ItemForm from './_component.js/ItemForm'
 
 const page = () => {
   return (
-    <div>Week 5 Page</div>
+    <ItemForm />
   )
 }
 

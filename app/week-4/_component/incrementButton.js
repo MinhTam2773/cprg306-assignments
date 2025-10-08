@@ -8,6 +8,7 @@ const IncrementButton = ({ increment, quantity }) => {
             items-center rounded-sm transition-colors active:bg-blue-700 disabled:bg-gray-500 disabled:cursor-default'
             onClick={increment}
             disabled={quantity == 20}
+            type='button'
         >
             +
         </button>
