@@ -1,17 +1,10 @@
 'use server'
 let sortBy = 'name'
 
-export const setSortBy = async (value) => {
-    sortBy = value;
-}
-export const getSortBy = async () => {
-    return sortBy;
-}
-
 export const addItem = async (item, items) => {
     items = [...items, item];
 
-    return sort(items);
+    return sort(items, sortBy);
 }
 
 export const sort = async (items, sort) => {
