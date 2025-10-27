@@ -10,7 +10,7 @@ const Item = ({item}) => {
                 <span className='bg-orange-500 rounded-sm px-1 text-white font-semibold'>{quantity}</span>
                 <h1 className='font-semibold'>{name}</h1>
             </div>
-            <span className='text-gray-400 font-extralight'>{category}</span>
+            <span className='text-gray-800 font-extralight'>{category}</span>
             <hr/>
         </div>
     )
