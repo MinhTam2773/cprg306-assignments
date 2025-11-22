@@ -55,14 +55,14 @@ export const searchMealsByName = async (itemName) => {
         let data = await res.json();
 
         if (!data.meals) {
-            res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${cleaned}`);
+              ;
             data = await res.json();
         }
 
         meals = data.meals || [];
         revalidatePath('/week-8');
     } catch (e) {
-        console.error(e);
+           ;
     }
 }
 
